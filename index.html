@@ -1,84 +1,495 @@
-<section class="contact" id="contact">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <div class="container">
+  <title>Shah e Najaf Translation Centre & Business Law Associates</title>
+  <meta name="description" content="Professional document translation and legal documentation assistance in Gujrat, Pakistan. Contact Shah e Najaf Translation Centre for inquiries.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#081629">
 
-    <div class="eyebrow">Get in Touch</div>
+  <style>
+    :root {
+      --navy: #081629;
+      --navy-light: #102746;
+      --gold: #d9b56d;
+      --white: #ffffff;
+      --light: #f4f6f9;
+      --text: #263449;
+    }
 
-    <h2>How Can We Help You?</h2>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <p>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
 
-      Contact Shah e Najaf Translation Centre &amp;
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+    }
 
-      Business Law Associates for translation and
+    a {
+      text-decoration: none;
+    }
 
-      documentation inquiries.
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
 
-    </p>
+    header {
+      background: var(--navy);
+      border-bottom: 2px solid var(--gold);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-    <div class="contact-details">
+    .navbar {
+      min-height: 82px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 14px 0;
+    }
 
-      <div>
+    .brand {
+      color: var(--gold);
+      font-size: 19px;
+      font-weight: bold;
+      line-height: 1.4;
+    }
 
-        <strong>Phone:</strong>
+    .brand small {
+      display: block;
+      color: white;
+      font-size: 11px;
+      font-weight: normal;
+      letter-spacing: 1.5px;
+    }
 
-        <a href="tel:+923130184866" style="color:#d9b56d">
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 19px;
+    }
 
-          +92 313 0184866
+    nav a {
+      color: white;
+      font-size: 14px;
+    }
 
-        </a>
+    nav a:hover {
+      color: var(--gold);
+    }
 
-      </div>
+    .hero {
+      background:
+        radial-gradient(ellipse at top right, #18375c, transparent 55%),
+        var(--navy);
+      color: white;
+      padding: 105px 0 100px;
+      text-align: center;
+    }
 
-      <div>
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
 
-        <strong>Email:</strong>
+    h1 {
+      font-size: clamp(34px, 5vw, 57px);
+      line-height: 1.2;
+      margin: 22px 0;
+    }
 
-        <a href="mailto:shahenajaf81@gmail.com"
+    h1 span {
+      color: var(--gold);
+    }
 
-           style="color:#d9b56d">
+    .hero p {
+      max-width: 690px;
+      margin: 0 auto 30px;
+      color: #e0e7f0;
+      font-size: 17px;
+    }
 
-          shahenajaf81@gmail.com
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
 
-        </a>
+    .btn {
+      display: inline-block;
+      padding: 13px 23px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 14px;
+    }
 
-      </div>
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
 
-      <div>
+    .btn-outline {
+      color: white;
+      border: 1px solid var(--gold);
+    }
 
-        <strong>Address:</strong>
+    section {
+      padding: 76px 0;
+    }
 
-        District Bar Association, Gujrat,
+    .section-heading {
+      text-align: center;
+      margin-bottom: 38px;
+    }
 
-        Punjab, Pakistan
+    .section-heading h2 {
+      color: var(--navy);
+      font-size: clamp(27px, 4vw, 36px);
+      margin: 8px 0;
+    }
 
-      </div>
+    .section-heading p {
+      max-width: 680px;
+      margin: auto;
+      color: #687487;
+    }
 
-    </div>
+    .services {
+      background: var(--light);
+    }
 
-    <a
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
 
-      class="btn btn-gold"
+    .card {
+      background: white;
+      border: 1px solid #e1e6ed;
+      border-top: 3px solid var(--gold);
+      padding: 27px 23px;
+      border-radius: 7px;
+      box-shadow: 0 8px 25px rgba(8, 22, 41, .04);
+    }
 
-      href="https://wa.me/923130184866?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+    .card .symbol {
+      font-size: 29px;
+      margin-bottom: 10px;
+    }
 
-      target="_blank"
+    .card h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+      font-size: 19px;
+    }
 
-      rel="noopener noreferrer">
+    .card p {
+      color: #687487;
+      font-size: 14px;
+    }
 
-      Contact Us on WhatsApp
+    .about {
+      background: white;
+    }
 
+    .about-content {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-content h2 {
+      color: var(--navy);
+      font-size: 32px;
+      margin: 12px 0 18px;
+    }
+
+    .about-content p {
+      margin-bottom: 14px;
+    }
+
+    .contact {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 34px;
+      margin: 10px 0;
+    }
+
+    .contact p {
+      color: #d8e0eb;
+      margin-bottom: 20px;
+    }
+
+    .contact-details {
+      margin: 25px 0;
+      line-height: 2;
+    }
+
+    footer {
+      background: #050d19;
+      color: #cbd4e1;
+      text-align: center;
+      padding: 25px 12px;
+      font-size: 13px;
+    }
+
+    footer span {
+      color: var(--gold);
+    }
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #168b54;
+      color: white;
+      padding: 13px 18px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0 4px 18px #0003;
+      z-index: 99;
+    }
+
+    @media (max-width: 760px) {
+      .navbar {
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 75px 0;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 55px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="#home">
+      SHAH E NAJAF
+      <small>TRANSLATION CENTRE & BUSINESS LAW ASSOCIATES</small>
     </a>
 
-    <p style="margin-top:20px">
-
-      We welcome your translation and documentation inquiries.
-
-    </p>
-
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
+</header>
 
-</section>
-  <script src="script.js"></script>
+<main>
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="eyebrow">Language • Documentation • Legal Assistance</div>
+
+      <h1>
+        Your Documents.<br>
+        <span>Handled with Care.</span>
+      </h1>
+
+      <p>
+        Translation services and documentation assistance
+        for individuals, families and businesses.
+        Based in Gujrat, Pakistan.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-gold" href="#services">
+          Explore Our Services
+        </a>
+
+        <a class="btn btn-outline" href="#contact">
+          Contact Our Office
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">What We Do</div>
+        <h2>Our Services</h2>
+        <p>
+          Documentation and translation assistance
+          tailored to your requirements.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="symbol">🌐</div>
+          <h3>Document Translation</h3>
+          <p>
+            Translation inquiries for personal,
+            educational and business documents.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">🇪🇸</div>
+          <h3>Spanish Translation</h3>
+          <p>
+            Spanish-language document translation
+            inquiries and language support.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">🇮🇹</div>
+          <h3>Italian Translation</h3>
+          <p>
+            Italian-language document translation
+            inquiries and documentation support.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">📄</div>
+          <h3>Personal Documents</h3>
+          <p>
+            Assistance with birth certificates,
+            marriage certificates, FRCs and other
+            personal document requirements.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">⚖️</div>
+          <h3>Legal Documentation</h3>
+          <p>
+            Inquiries regarding affidavits,
+            applications and other legal documents.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">✔</div>
+          <h3>Attestation Guidance</h3>
+          <p>
+            Guidance on document attestation
+            procedures and relevant requirements.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-content">
+      <div class="eyebrow">About Our Centre</div>
+      <h2>Professional Service. Clear Communication.</h2>
+
+      <p>
+        Shah e Najaf Translation Centre & Business Law
+        Associates aims to provide clear communication,
+        careful document handling and helpful guidance
+        throughout the documentation process.
+      </p>
+
+      <p>
+        Contact us to discuss your document, language
+        requirements and the procedure applicable to
+        your particular case.
+      </p>
+
+      <a class="btn btn-gold" href="#contact">
+        Discuss Your Requirements
+      </a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="eyebrow">Get in Touch</div>
+      <h2>How Can We Help You?</h2>
+
+      <p>
+        Contact our office to discuss your translation
+        or documentation requirements.
+      </p>
+
+      <div class="contact-details">
+        <div><strong>Office:</strong> Gujrat, Punjab, Pakistan</div>
+        <div><strong>Phone:</strong> Add your contact number</div>
+        <div><strong>Email:</strong> Add your business email</div>
+      </div>
+
+      <!-- Replace 923001234567 with your WhatsApp number.
+           Use country code, without + or spaces. -->
+
+      <a
+        class="btn btn-gold"
+        href="https://wa.me/923001234567?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+        target="_blank"
+        rel="noopener noreferrer">
+        Message Us on WhatsApp
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>
+    © <span id="year"></span>
+    <span>Shah e Najaf Translation Centre & Business Law Associates</span>
+  </p>
+  <p>Gujrat, Punjab, Pakistan</p>
+</footer>
+
+<a
+  class="whatsapp"
+  href="https://wa.me/923001234567"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contact us on WhatsApp">
+  WhatsApp Us
+</a>
+
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
 </body>
 </html>
